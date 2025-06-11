@@ -3,6 +3,7 @@
 import { z } from "zod"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { authClient } from "@/lib/auth-client"
+import Image from "next/image"
 
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -165,12 +166,11 @@ export const SignInView = () => {
                         </div>
                     </form>
                 </Form>
-                <div className="bg-radial from-green-500 to-green-800 relative hidden md:flex flex-col gap-y-4 items-center justify-center">
-                    <img src="/logo.svg" alt="Image" className="h[92px] w-[92px]" />
+                <div className="bg-radial from-sidebar-accent to-sidebar relative hidden md:flex flex-col gap-y-4 items-center justify-center">
+                    <Image src="/logo.svg" alt="Logo" width={92} height={92} priority />
                     <p className="text-2xl font-semibold text-white">
                         Meet.AI
                     </p>
-
                 </div>
                 </CardContent>
             </Card>
