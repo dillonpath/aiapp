@@ -1,6 +1,6 @@
 import { auth } from "@/lib/auth";
 import { loadSearchParams } from "@/modules/agents/params";
-import { ListHeader } from "@/modules/agents/ui/components/list-header";
+import { ListHeader } from "@/modules/agents/ui/components/agents-list-header";
 import { AgentsView, AgentsViewError, AgentsViewLoading } from "@/modules/agents/ui/views/agents-view";
 import { getQueryClient, trpc } from "@/trpc/server";
 import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
