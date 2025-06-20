@@ -22,7 +22,7 @@ export const UpcomingState = ({ meetingId, onCancelMeeting, isCancelling }: Prop
                 Cancel Meeting
             </Button>
             <Button disabled={isCancelling} asChild className="w-full lg:w-auto">
-                <Link href={`/meetings/${meetingId}`}>
+                <Link href={`/call/${meetingId}`}>
                     <VideoIcon />
                     Start Meeting
                 </Link>
